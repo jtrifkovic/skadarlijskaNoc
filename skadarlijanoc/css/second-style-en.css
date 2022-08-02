@@ -1,0 +1,1212 @@
+/* =====================
+    nasa prica stranica
+   =====================
+*/
+
+.our-story-header {
+    min-height: 50vh;
+  
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 25.22%,
+        rgba(0, 0, 0, 0) 118.17%
+      ),
+      url(../images/our-story-wallpaper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    width: min(90%, 1290px);
+    min-height: 50vh;
+    margin: 0 auto;
+  }
+  
+  .secondary-header-text {
+    padding-bottom: 20px;
+  }
+  
+  .secondary-header-text * {
+    color: white;
+    text-align: left;
+  }
+  
+  .secondary-header-text h2 {
+    margin-bottom: 15px;
+  
+    font-size: 3.125rem;
+    line-height: 52.5px;
+  }
+  
+  /* ==========================
+      nasa prica stranica main
+     ==========================
+  */
+  
+  .our-story-wrap {
+    display: flex;
+  
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .our-story-text {
+    max-width: 40%;
+  }
+  
+  .our-story-text * {
+    text-align: left;
+  }
+  
+  .our-story-text h2 {
+    font-size: 3.125rem;
+    line-height: 62.5px;
+  }
+  
+  .our-story-text p {
+    line-height: 26px;
+  }
+  
+  .our-story-text :nth-child(2) {
+    padding: 15px 0;
+  }
+  
+  .our-story-banner {
+    margin: 110px 0;
+  }
+  
+  .our-story-images {
+    position: relative;
+    top: 0;
+    left: -50px;
+  }
+  
+  .small-image {
+    position: absolute;
+    top: 50%;
+    right: -250px;
+    transform: translateY(-50%);
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .reservations {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    min-height: 60vh;
+  
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/meat-wallpaper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .reservations-wrap {
+    color: white;
+  
+    text-align: center;
+  }
+  
+  .reservations-wrap h2 {
+    font-size: 3.125rem;
+    line-height: 52.5px;
+  }
+  
+  .reservations-wrap p {
+    padding: 20px 0 45px;
+  }
+  
+  .reservations-button {
+    padding: 15px 35px;
+  
+    color: white;
+    font-family: "Bagerich Regular";
+    font-size: 1.5rem;
+    font-weight: 400;
+  
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: 5px;
+  
+    cursor: pointer;
+  }
+  
+  /* MENU */
+  
+  .menu-header {
+    min-height: 30vh;
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url(../images/drink_shutterstock_1689689371\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menu-heading {
+    margin-top: 10%;
+  }
+  .line-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+  }
+  .lineHeight{
+    line-height: 1;
+  }
+  
+  .svg h3 {
+    font-size: 22px;
+    margin-top: -55px;
+    margin-bottom: 40px;
+  }
+  .menu-heading h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 105%;
+    letter-spacing: 0.05em;
+  }
+  .under-text {
+    font-family: "Bagerich";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 105%;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    padding-top: 5px;
+    color: #de8e15;
+  }
+  .svg {
+    text-align: center;
+    margin-bottom: 71px;
+  }
+  
+  .menu-wrap {
+    margin-top: 80px;
+  }
+  .menu-list {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .menu-chooser h3 {
+    font-family: "Bagerich Regular";
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #111111;
+    max-width: 100%;
+  }
+  .menu-chooser p {
+    font-family: "Source Sans Pro Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 105%;
+    color: #111111;
+    width: 55%;
+    margin-bottom: 50px;
+  }
+  .menu-chooser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-container {
+    max-width: 1030px;
+  
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .section-container1 {
+    width: 73%;
+  
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .menu-image {
+    width: min(1170px, calc(100vw -40px));
+    text-align: center;
+    margin: 0 auto;
+  }
+  .imag {
+    width: 100%;
+  }
+  .menu-list1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    gap: 6%;
+    margin-top: 6%;
+  }
+  .section-container2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .menu-info1 {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 100%;
+  
+    background-color: #fff8ed;
+    border: 2px solid var(--orange-color);
+  }
+  .menu-info1::before,
+  .menu-info1::after {
+    content: "";
+    position: absolute;
+    left: -27px;
+  
+    width: 50px;
+    height: 50px;
+  
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+  
+    transform: rotate(45deg);
+  }
+  
+  .menu-info1::before {
+    top: -27px;
+    border-right: 2px solid var(--orange-color);
+  }
+  
+  .menu-info1::after {
+    bottom: -27px;
+    border-top: 2px solid var(--orange-color);
+  }
+  
+  .menu-info1 h2 {
+    font-size: 22px;
+  }
+  
+  @media screen and (max-width: 754px) {
+    .menu-list {
+      display: flex;
+    }
+  
+    .section-container1 {
+      margin: 0;
+      margin-left: 30px;
+  
+      margin: 0 auto;
+      margin-top: 70px;
+  
+      justify-content: space-around;
+    }
+  }
+  @media screen and (min-width: 1150px) {
+    .active-nav-link {
+      position: relative;
+    }
+  
+    .active-nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: -66px;
+  
+      width: 100%;
+      height: 3.5px;
+  
+      background-color: var(--orange-color);
+    }
+  }
+  @media screen and (max-width: 1111px) {
+    .our-story-wrap {
+      flex-direction: column;
+      align-items: center;
+      font-size: 70px;
+    }
+    .align-center {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: -80px;
+    }
+    .our-story-header {
+      height: 10vh;
+    }
+  
+    .big-image {
+      margin-bottom: 200px;
+    }
+    .our-story-text p {
+      max-width: 100%;
+    }
+    .our-story-text > h2 {
+      text-align: center;
+      /* margin-top: -40px; */
+      font-size: 3.125rem;
+      max-width: 100%;
+    }
+    .our-story-wrap p {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 18px;
+  
+      max-width: 100%;
+    }
+    .our-story-text {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .small-image {
+      display: none;
+    }
+  
+    .menu-header {
+      max-height: 40vh;
+    }
+    .secondary-header-text h2 {
+      font-size: 30px;
+    }
+    .secondary-header-text p {
+      font-size: 16px;
+    }
+    .our-story-header {
+      min-height: 40vh;
+    }
+    .header-container {
+      justify-content: space-evenly;
+    }
+    .big-image {
+      margin-bottom: 100px;
+      margin-top: -70px;
+    }
+  
+    .big-image {
+      width: 100%;
+      padding-left: 100px;
+      margin-top: 40px;
+    }
+    .our-story-wrap {
+      max-width: 100%;
+    }
+    .our-story-text {
+      max-width: 100%;
+    }
+    .our-story-text h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  
+    .our-story-wrap p {
+      font-size: 15px;
+      margin-top: 1px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 5%;
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 702px) {
+    .under-text {
+      font-size: 16px;
+    }
+    .menu-chooser h2 {
+      font-size: 24px;
+    }
+    .menu-chooser p {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .menu-info h2 {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .our-story-wrap h2 {
+      font-size: 40px;
+    }
+    .our-story-text h2 {
+      font-size: 26px;
+    }
+    .line {
+      width: 20px;
+      margin-top: 10px;
+    }
+    .menu-heading h3 {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+    .under-text {
+      font-size: 16px;
+    }
+    .menu-chooser p {
+      font-size: 12px;
+    }
+  
+    .big-image {
+      width: 100%;
+      padding-left: 90px;
+      margin-bottom: 100px;
+    }
+    .reservations-wrap h2 {
+      font-size: 36px;
+    }
+    .reservations-wrap p {
+      font-size: 20px;
+    }
+    .footer-flex p {
+      font-size: 16px;
+    }
+    .footer-container h3 {
+      font-size: 30px;
+      margin-bottom: -50px;
+    }
+    address {
+      font-size: 16px;
+    }
+    .align-center {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .our-story-text {
+      max-width: 100%;
+    }
+  
+    .menu-info h2 {
+      padding-top: 15%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .menu-list1 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /* ======================================================================================
+  
+                                       kontakt stranica     
+  
+     ======================================================================================
+  */
+  
+  .contact-header {
+    min-height: 50vh;
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url(../images/contact-wallpaper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .contact-info-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .paragraph-first-line {
+    position: relative;
+    top: 60px;
+  }
+  .adress {
+    text-align: center;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 35px;
+  
+    text-align: center;
+  }
+  .adress1 {
+    margin-left: 80px;
+  }
+  .adress2 {
+    margin-left: 120px;
+  }
+  .nav-link-button {
+    cursor: pointer;
+  }
+  .contact-info p {
+    padding-bottom: 5px;
+  
+    color: var(--orange-color);
+    font-family: "Bagerich Regular";
+    font-size: 1.5rem;
+  }
+  
+  .contact-info address {
+    color: black;
+    font-family: "Source Sans Pro Regular";
+    font-size: 1.125rem;
+    line-height: 21.87px;
+  }
+  .form-wrapper {
+    margin-top: 78px;
+    max-width: 100%;
+  }
+  .form-content-wrapper {
+    display: flex;
+    max-width: 80%;
+    margin-bottom: 170px;
+  }
+  .form-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-send-text {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 115px;
+  }
+  
+  .text-area-contact {
+    height: 200px;
+    width: 570px;
+    max-width: 100%;
+    border-radius: 3px;
+    border: 1px solid #7e7e7e;
+    font-family: "Source Sans Pro Regular";
+    resize: none;
+    padding: 10px 0 0 10px;
+    font-size: 14px;
+    outline-color: #de8e15;
+  }
+  .contact-name,
+  .contact-email {
+    width: 270px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #7e7e7e;
+    font-family: "Source Sans Pro Regular";
+    padding-left: 10px;
+    outline-color: #de8e15;
+    max-width: 100%;
+  }
+  .contact-email {
+    min-width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  label {
+    font-family: "Source Sans Pro Regular";
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 6px;
+  }
+  input,
+  label {
+    display: block;
+  }
+  ::placeholder {
+    font-family: "Source Sans Pro Regular";
+    font-weight: 300;
+    padding: 0px 0 15px 0px;
+  }
+  .name-wrapper {
+    padding-right: 30px;
+  }
+  .form-button {
+    background-color: #de8e15;
+    color: white;
+    font-family: "Bagerich Regular";
+    font-size: 24px;
+    width: 160px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+  .google-maps img {
+    min-width: 100%;
+    margin-top: 98px;
+    padding-left: 30px;
+  }
+  .padding-block {
+    padding-bottom: 0;
+  }
+  
+  /* ======================================================================================
+                                    MEDIA QUERY ZA KONTAKT    
+     ======================================================================================
+  */
+  @media screen and (min-width: 1150px) {
+    .active-nav-link {
+      position: relative;
+    }
+  
+    .active-nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: -66px;
+  
+      width: 100%;
+      height: 3.5px;
+  
+      background-color: var(--orange-color);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .contact-info-wrap {
+      justify-content: center;
+    }
+    .form-content-wrapper {
+      flex-direction: column;
+      max-width: 100%;
+      margin-bottom: 80px;
+    }
+    .name-wrapper {
+      width: 100%;
+      padding-right: 0;
+    }
+    .email-wrapper,
+    .contact-name {
+      width: 100%;
+    }
+    .google-maps img {
+      padding: 0;
+      max-width: 100%;
+      margin-top: 60px;
+    }
+    .header-container,
+    .contact-header {
+      min-height: 30vh;
+    }
+    .contact-send-text {
+      margin-top: 30px;
+    }
+    .form-wrapper {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    .form-button {
+      margin-top: 20px;
+      /* width: 100%; */
+    }
+    .secondary-header-text-h2 {
+      font-size: 45px !important;
+    }
+    .secondary-header-text-p {
+      font-size: 1rem !important;
+    }
+    .contact-info {
+      max-width: 280px;
+    }
+    .contact-send-text,
+    .reservations-wrap-h2 {
+      font-size: 40px;
+    }
+    .reservations-wrap-p {
+      font-size: 14px;
+    }
+    .img-contact {
+      max-width: 100%;
+    }
+    .adress {
+      font-size: 14px !important;
+      margin-left: 25px;
+    }
+    .adress1 {
+      margin-left: 55px !important;
+    }
+    .adress2 {
+      margin-left: 90px;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 792px) {
+    .padding-block {
+      padding: 30px 0;
+    }
+  
+    .contact-info-wrap {
+      justify-content: center;
+    }
+    .name-wrapper {
+      width: 100%;
+      padding-right: 0;
+    }
+    .contact-name,
+    .email-wrapper {
+      width: 100%;
+    }
+  
+    .google-maps {
+      min-width: 100%;
+    }
+    .google-maps img {
+      padding: 0;
+      max-width: 100%;
+      align-items: center;
+    }
+    .form-content-wrapper {
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 80px;
+    }
+    .google-maps img {
+      min-width: auto;
+      margin-top: 60px;
+    }
+    .google-maps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-container,
+    .contact-header {
+      min-height: 30vh;
+    }
+    .contact-send-text {
+      margin-top: 30px;
+    }
+    .form-wrapper {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    .form-button {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (min-width: 793px) and (max-width: 822px) {
+    .padding-block {
+      padding: 30px 0;
+    }
+    .contact-info-wrap {
+      justify-content: center;
+    }
+    .form-content-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 80px;
+    }
+    .header-container,
+    .contact-header {
+      min-height: 30vh;
+    }
+  
+    .contact-send-text {
+      margin-top: 30px;
+    }
+    .form-wrapper {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    .form-button {
+      margin-top: 20px;
+    }
+    .google-maps img {
+      margin-top: 60px;
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 823px) and (max-width: 900px) {
+    .padding-block {
+      padding: 30px 0;
+    }
+    .contact-info-wrap {
+      flex-direction: column;
+    }
+    /* .contact-info {
+      position: relative;
+  
+      max-width: 370px;
+      max-height: 125px;
+      width: 100%;
+      padding: 40px 20px;
+  
+      text-align: center;
+  
+      background-color: #fff8ed;
+      border: 2px solid var(--orange-color);
+      margin-top: 20px;
+    } */
+    .header-container,
+    .contact-header {
+      min-height: 30vh;
+    }
+    .contact-send-text {
+      margin-top: 30px;
+    }
+    .form-wrapper {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    .form-button {
+      margin-top: 20px;
+    }
+    .google-maps img {
+      margin-top: 60px;
+      padding: 0;
+    }
+    .form-content-wrapper {
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1233px) {
+    .padding-block {
+      padding: 30px 0;
+    }
+    .form-content-wrapper {
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 80px;
+    }
+    .form-wrapper {
+      width: auto;
+    }
+    /* .contact-info {
+      position: relative;
+  
+      max-width: 270px;
+      max-height: 125px;
+      width: 100%;
+      padding: 40px 20px;
+  
+      text-align: center;
+  
+      /* background-color: #fff8ed;
+      border: 2px solid var(--orange-color); */
+    /* margin-top: 20px;
+    } */
+    */ .contact-info-wrap {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+    }
+    .google-maps img {
+      padding: 0;
+      margin-top: 60px;
+    }
+    .header-container,
+    .contact-header {
+      min-height: 30vh;
+    }
+  
+    .contact-send-text {
+      margin-top: 30px;
+    }
+    .form-wrapper {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    .form-button {
+      margin-top: 20px;
+    }
+    .contact-info-wrap {
+      flex-direction: column;
+    }
+    .button-submit-form {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1233px) {
+    .form-content-wrapper {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-submit-form {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  /* ======================================================================================
+  
+                                            MODAL POPUP 
+  
+     ======================================================================================
+  */
+  
+  .modal-h1 {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    padding: 44px 0 8px 0;
+  }
+  .modal-p {
+    text-align: center;
+    font-family: "Source Sans Pro Regular";
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 17px;
+  }
+  .modal-input-first,
+  .modal-input-second,
+  .modal-input-submit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .modal-input-first {
+    padding-top: 30px;
+  }
+  .modal-input-second {
+    justify-content: space-between;
+    padding-top: 19px;
+  }
+  .modal-input-submit {
+    padding-top: 40px;
+  }
+  .modal-info {
+    border-bottom: 1px solid black;
+  }
+  .first-modal-holder {
+    padding-right: 20px;
+  }
+  
+  .bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 2;
+  }
+  
+  .modal-content {
+    width: 770px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 45px;
+    animation: scaleUp 300ms linear;
+  }
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8) translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  .input-name,
+  .input-mail {
+    width: 330px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0.5px solid #7e7e7e;
+    font-family: "Source Sans Pro Regular";
+    padding-left: 10px;
+    outline-color: #de8e15;
+  }
+  .input-phone,
+  .input-time,
+  .input-person,
+  .input-date {
+    width: 155px;
+    height: 40px;
+    border: 0.5px solid #7e7e7e;
+    border-radius: 3px;
+    outline-color: #de8e15;
+    padding-left: 10px;
+  }
+  .input-send,
+  .input-exit {
+    width: 160px;
+    height: 50px;
+    border: 0.5px solid #7e7e7e;
+    border-radius: 3px;
+    font-family: "Bagerich Regular";
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .input-send {
+    margin-right: 20px;
+    background-color: var(--orange-color);
+    color: white;
+  }
+  .input-exit {
+    background-color: white;
+    color: black;
+  }
+  .input-time,
+  .input-person {
+    background-color: white;
+  }
+  
+  input[required] {
+    outline-color: red;
+  }
+  ::-webkit-calendar-picker-indicator {
+    background-color: #de8e15;
+    height: 35%;
+    padding: 25px 10px 25px 10px;
+  }
+  .fa-chevron-down {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    font-size: 10px;
+    color: #de8e15;
+  }
+  .second-arrow {
+    position: absolute;
+    top: 38px;
+    right: 5px;
+  }
+  .custom-select,
+  .input-person {
+    position: relative;
+  }
+  .input-time,
+  .input-person {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  /* ======================================================================================
+                                    MEDIA QUERY ZA MODAL POPUP    
+     ======================================================================================
+  */
+  @media screen and (max-width: 609px) {
+    .input-send,
+    .input-exit {
+      margin-right: 0;
+      width: 100%;
+    }
+    .input-phone,
+    .input-time,
+    .input-person,
+    .input-date {
+      width: 155px;
+      height: 35px;
+      border: 0.5px solid #7e7e7e;
+      border-radius: 3px;
+      outline-color: #de8e15;
+      padding-left: 10px;
+    }
+    .modal-info {
+      padding-top: 12spx;
+    }
+    .input-send {
+      width: 60%;
+    }
+    .input-exit {
+      width: 60%;
+    }
+    .submit-class {
+      flex-wrap: nowrap;
+      gap: 3%;
+    }
+    .input-name,
+    .input-mail {
+      width: 330px;
+      height: 35px;
+      border-radius: 3px;
+      border: 0.5px solid #7e7e7e;
+      font-family: "Source Sans Pro Regular";
+      padding-left: 10px;
+      outline-color: #de8e15;
+    }
+  }
+  @media screen and (min-width: 410px) and (max-width: 508px) {
+    .modal-content {
+      width: auto;
+      height: 400px;
+    }
+    .input-send,
+    .input-exit {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 769px) {
+    .modal-content {
+      width: 90%;
+    }
+    .modal-h1 {
+      padding: 10px 0 4px 0;
+      font-size: 22px;
+    }
+    .modal-p {
+      font-size: 13px;
+      padding-bottom: 12px;
+    }
+    .modal-input-first,
+    .modal-input-second {
+      padding-top: 5px;
+      display: block;
+    }
+    .submit-class {
+      padding-top: 10px;
+      display: flex;
+    }
+    .modal-input-submit {
+      display: flex;
+    }
+    .first-modal-holder {
+      padding: 0;
+    }
+    .input-name,
+    .input-mail,
+    .input-phone,
+    .input-time,
+    .input-person,
+    .input-date {
+      width: 100%;
+      font-size: 16px;
+    }
+    .modal-content {
+      height: 545px;
+    }
+    label {
+      font-size: 13px;
+    }
+    .input-send,
+    .input-exit {
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 332px) {
+    .submit-class {
+      flex-wrap: nowrap;
+    }
+  }
+  

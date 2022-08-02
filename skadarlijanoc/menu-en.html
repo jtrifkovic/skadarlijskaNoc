@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skadarlijska noć</title>
+    <link rel="stylesheet" href="./css/style-en.css" />
+    <link rel="stylesheet" href="./css/second-style-en.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  </head>
+  <body>
+    <header class="menu-header">
+      <div class="header-container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/"> <img src="./images/skadarlija-logo.svg" alt="skadarlijska noc beograd belgrade" /></a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="./index-en.html" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="./our-story-en.html" class="nav-link">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a href="./menu-en.html" class="active-nav-link nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact-en.html" class="nav-link">Contact</a>
+            </li>
+            <li class="language-nav-item">
+              <span class="nav-item active-language">
+                <a href="./menu-en.html" class="nav-link">EN</a>
+              </span>
+              <span class="nav-item language-separator">|</span>
+              <span class="nav-item"
+                ><a href="./menu.html" class="nav-link">RS</a></span
+              >
+            </li>
+            <li class="nav-item nav-item-button" id="res" onclick="openModal()">
+              <a  class="nav-link nav-link-button">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.751 9.13498H15.1195C15.0522 7.78374 14.325 6.54157 13.0411 5.59105C12.1566 4.93624 11.0631 4.4767 9.90991 4.23819V4.00121C9.90991 3.58207 9.47747 3.23672 8.97297 3.19831V2.42589C9.1907 2.30363 9.36811 2.14114 9.49005 1.95231C9.61199 1.76347 9.67484 1.5539 9.67322 1.34148C9.67424 1.16561 9.63171 0.991309 9.54806 0.82859C9.46441 0.66587 9.34129 0.517938 9.18577 0.393289C9.03025 0.268639 8.8454 0.169728 8.64184 0.102236C8.43827 0.0347438 8.22 0 7.99955 0C7.7791 0 7.56083 0.0347438 7.35726 0.102236C7.1537 0.169728 6.96885 0.268639 6.81333 0.393289C6.65781 0.517938 6.53469 0.66587 6.45104 0.82859C6.36739 0.991309 6.32486 1.16561 6.32588 1.34148C6.32443 1.55395 6.38745 1.76355 6.50954 1.95238C6.63163 2.14121 6.80918 2.30367 7.02703 2.42589V3.19831C6.52253 3.23672 6.0901 3.58207 6.0901 4.00121V4.23819C4.93695 4.47682 3.84336 4.93624 2.9589 5.59105C1.67497 6.54157 0.947767 7.78374 0.880524 9.13498H0.248958C0.182032 9.13574 0.118223 9.15767 0.0715468 9.19594C0.0248711 9.23421 -0.000854225 9.2857 2.16549e-05 9.3391V10.455C-0.000815241 10.5083 0.0249374 10.5597 0.071618 10.598C0.118299 10.6362 0.182086 10.658 0.248958 10.6587H2.16218V11.6362H0.248958C0.216391 11.6356 0.184005 11.6402 0.15372 11.6498C0.123435 11.6594 0.0958674 11.6737 0.0726521 11.6919C0.0494367 11.7102 0.0310458 11.7319 0.0185697 11.7559C0.00609361 11.78 -0.00021367 11.8057 2.16549e-05 11.8317V12.9476C2.16549e-05 13.0587 0.109643 13.16 0.248958 13.16H15.751C15.8904 13.16 16 13.0587 16 12.9476V11.8317C16.0002 11.8057 15.9939 11.78 15.9814 11.7559C15.969 11.7319 15.9506 11.7102 15.9273 11.6919C15.9041 11.6737 15.8766 11.6594 15.8463 11.6498C15.816 11.6402 15.7836 11.6356 15.751 11.6362H13.8378V10.6587H15.751C15.8179 10.658 15.8817 10.6362 15.9284 10.598C15.975 10.5598 16.0008 10.5083 16 10.455V9.3391C16.0009 9.2857 15.9751 9.23421 15.9285 9.19594C15.8818 9.15767 15.818 9.13574 15.751 9.13498ZM8 0.406192C8.23186 0.406192 8.45852 0.461046 8.65131 0.563816C8.84409 0.666587 8.99435 0.812659 9.08308 0.983561C9.17181 1.15446 9.19503 1.34252 9.1498 1.52395C9.10456 1.70537 8.99291 1.87203 8.82896 2.00283C8.665 2.13363 8.45612 2.22271 8.22871 2.2588C8.0013 2.29489 7.76559 2.27636 7.55137 2.20557C7.33716 2.13478 7.15407 2.01491 7.02525 1.8611C6.89643 1.70729 6.82768 1.52646 6.82768 1.34148C6.82802 1.09351 6.95164 0.855775 7.17142 0.680434C7.3912 0.505093 7.68919 0.406466 8 0.406192ZM8 2.67927C8.15873 2.67967 8.31664 2.66108 8.46847 2.62412V3.18377H7.53153V2.62412C7.68336 2.66108 7.84127 2.67967 8 2.67927ZM6.5946 4.00121C6.59736 3.89181 6.65309 3.78751 6.7501 3.71016C6.8471 3.63281 6.97787 3.58841 7.11499 3.58626H8.88501C9.02213 3.58841 9.1529 3.63281 9.2499 3.71016C9.34691 3.78751 9.40264 3.89181 9.4054 4.00121V4.15045C8.4759 4.01732 7.5241 4.01732 6.5946 4.15045V4.00121ZM3.30902 5.88608C4.17565 5.24827 5.2374 4.80365 6.38761 4.59688C6.40328 4.59549 6.41875 4.59291 6.43381 4.58917C7.46552 4.40742 8.53453 4.40751 9.56619 4.58946C9.58124 4.59332 9.59671 4.59603 9.61239 4.59757C10.7625 4.80406 11.8243 5.24844 12.691 5.88605C13.8707 6.75944 14.5474 7.89873 14.6146 9.13498H1.38539C1.45256 7.89873 2.12931 6.75947 3.30902 5.88608ZM15.4955 12.7575H0.504525V12.0387H15.4955V12.7575ZM13.3333 11.6362H2.66668V10.6587H13.3333V11.6362ZM15.4955 10.2562H0.504525V9.53747H15.4955V10.2562Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <span>Reservation</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </nav>
+        <div class="section-container">
+          <div class="secondary-header-text">
+            <h2>Menu</h2>
+            <p>Skadarlija night, a bohemian night that has been going on since 1975.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu-heading">
+      <div class="line-wrap">
+      <img class="line" src="./images/Line 3.svg" alt="">
+      <h3>DRINKS</h3>
+      <img class="line" src="./images/Line 3.svg" alt="">
+    </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+    
+      </section>
+    </div>
+    <div class="menu-container">
+    <div class="menu-list">
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Coffee and tea</h3></div>
+        <h3>-Homemade coffee-</h3>
+        <!-- <p>IN THE HEART OF THE OLD TOWN amet, consectetur adipiscing elit.</p> -->
+        <h3>-Espresso-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Espresso with milk-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Espresso with whipped cream-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Capuccino-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Nes coffee-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Nes coffee with whipped cream-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Ice coffee-</h3>
+<!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Tea-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Coffee late-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Hot chocolate-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Milk-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Milk supplement-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Whipped cream supplement-</h3>
+        
+      </div>
+      <div class="menu-chooser">
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>NON-ALCOHOLIC BEVERAGES</h3></div>
+          <h3>-Soda drinks(Coca Cola, Fanta...)-</h3>
+          <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+          <h3>-Still juices(0, 2)-</h3>
+          <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+          <h3>-Cedevita(0, 25)-</h3>
+          <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+          <h3>-Lemonade(0, 25)-</h3>
+          <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+          <h3>-Squeezed orange(0, 25)-</h3>
+          <h3>-Vitamin bomb(0, 3)-</h3>
+        </div>
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Water</h3></div>
+        <div style="margin-top: -15px;">
+        <h3>-Aqua Viva-</h2>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Aqua Viva-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Knjaz Milos(0, 33)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Knjaz Milos(1L)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+      </div>
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Energy drinks</h3></div>
+        <div style="margin-top: -20px;">
+        <h3>-Red Bull-</h2>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Guarana-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        </div>
+      </div>
+      
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Beer </h3></div>
+        <h3>-Jelen light draft beer(0,33)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Jelen light draft beer(0,50)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Stella Artois draft beer(0,25)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Stella Artois draft beer(0,50)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Stella Artois draft beer(0,50)-</h3>
+        <h3>-Stella Artois(0,33) bottle-</h3>
+        <h3>-Niksicko light beer (0,33) bottle-</h3>
+        <h3>-Niksicko light draft beer(0,33)-</h3>
+        <h3>-Niksicko light draft beer(0,50)-</h3>
+        <h3>-Staropramen light draft beer(0,33)-</h3>
+        <h3>-Staropramen light draft beer(0,50)-</h3>
+        <h3>-Becks(0,33) bottle-</h3>
+        <h3>-Corona(0,35) bottle-</h3>
+        <h3>-Erdinger light (0,50) bottle-</h3>
+        <h3>-Erdinger dark (0,50) bottle-</h3>
+        <h3>-Heineken(0,25) bottle-</h3>
+        <h3>-Somersby apple(0,33) bottle-</h3>
+        <h3>-Somersby pear(0,33) bottle-</h3>
+      </div>
+    </div>
+  </div>
+    <div class="menu-image">
+      <img class="imag" src="./images/menu-pic.png" alt="" />
+    </div>
+    <div class="menu-heading">
+      <div class="line-wrap">
+      <img class="line" src="./images/Line 3.svg" alt="">
+      <h3>ALCOHOLIC BEVERAGES</h3>
+      <img class="line" src="./images/Line 3.svg" alt="">
+    </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+    
+      </section>
+    </div>
+    <div class="menu-container">
+    <div class="menu-list">
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Cognac</h3></div>
+        <h3>-Martel VS(0,04)-</h2>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Martel VSOP(0,04)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Martel XO(0,04)-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <div class="menu-chooser">
+          <div class="svg" style="margin-top: 23px;"><img class="card"src="./images/Subtract.svg" alt=""><h3>Cocktails</h3></div>
+          <h3>-Mojito(0,3)-</h2>
+          <p>Rum, lime, fresh menthe, sugar brown, sparkling mineral water</p>
+          <h3>-Aperol Spritz(0,3)-</h2>
+            <p>Aperol, henkell, sparkling mineral water</p>
+            <h3>-Long Island(0,3)-</h2>
+              <p>Vodka, gin, tequilla, white rum, Coca cola, triple sec, lemon juice</p>
+              <h3>-Hugo Spritz(0,3)-</h2>
+                <p>Bourtree liqueur, prosecco, fresh menthe, lime, sparkling mineral water</p>
+                <h3>-Mai Tai(0,3)-</h2>
+                  <p>White rum, dark rum, Amaretto, lemon juice, grenadine</p>
+          </div>
+      </div>
+        
+      <div class="menu-chooser" style="margin-left: -20px;">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Homemade brandy</h3></div>
+        <h3>-Premijum rakija (0,04) </h3>
+        <p>Brend Manastir Kovilj, Zlatna dolina - šljivovica, dunjevača, kajsijevača, viljamovka, lozovača</p>
+       
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Rakija "Srpska trojka"-</h3>
+        <p>šljivovica, dunjevača, kajsijevača, viljamovka, lozovača, medovača</p>
+        <h3>-Divlja kruška Stanišić-</h3>
+        <h3>-Vodka Smirnoff-</h3>
+        <!-- <p>U SRCU STAROG GRADA amet, consectetur adipiscing elit.</p> -->
+        <h3>-Vodka Grey Goose(0,04)-</h3>
+        <h3>-Gin Beefeater(0,04)-</h3>
+        <h3>-Rum Old pascas white or dark(0,04)-</h3>
+        <h3>-Tequila Two Fingers-</h3>
+        <h3>-Martini Bianco(0,04)-</h3>
+        <h3>-Baileys(0,04)-</h3>
+        <h3>-Campari(0,04)-</h3>
+        <h3>-Jegermeister(0,04)-</h3>
+        <h3>-Aperol(0,04)-</h3>
+        <h3>-Gorki list(0,04)-</h3>
+        <h3>-Gorki list dupli(0,08)-</h3>
+        <h3>-Vinjak(0,04)-</h3>
+        <h3>-Vermut()-</h3>
+      </div>
+     
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Whisky</h3></div>
+        <h3>-Regular(0,04)-</h3>
+        <p>Balantines, J. Walker, Jim Beam, Jameson</p>
+        <h3>-Premium(0,04)-</h3>
+        <p>Chivas, Jack Daniels, J. Walker Black</p>
+        <h3>-Extra-</h3>
+        
+        <p>Royal Salute 21 year old branded Scotch whiskey</p>
+      </div>
+    </div>
+  </div>
+    <div class="menu-image">
+      <img class="imag" src="./images/menu-pic.png" alt="" />
+    </div>
+   
+    <div class="menu-heading">
+      <div class="line-wrap">
+        <img class="line" src="./images/Line 3.svg" alt="">
+        <h3>WINE LIST</h3>
+        <img class="line" src="./images/Line 3.svg" alt="">
+      </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+      </div>
+    </div>
+    <div class="menu-container">
+    <div class="menu-list">
+      <div class="menu-chooser" style="padding-right: 35px;">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>White vine</h3></div>
+        <h3>-TRIJUMF / Vinarija Aleksandovic-</h3>
+        <p>Dry white wine <br> 
+          Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+         Varietal composition: Sauvignon Blanc, Pinot Blanc, Rajnski Riesling
+        </p>
+        <h3>-CHARDONNAY KOVACEVIC- / Vinarija Kovacevic-</h3>
+        <p>Dry white wine <br> 
+          Country of origin: Serbia, Fruska Gora, Irig <br>
+          Varietal composition: 100% Chardonnay
+        </p>
+        <h3>-CHARDONNAY RADOVANOVIC- / Vinarija Radovanovic-</h3>
+        <p>Dry white wine <br> 
+          Country of origin: Serbia, Sumadijski region, Krnjevo <br>
+          Varietal composition: 100% Chardonnay
+        </p>
+        <h3>-HARIZMA / Vinarija Aleksandrovac-</h3>
+        <p>Dry white wine <br> 
+          Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+          Varietal composition: 100% Chardonnay
+        </p>
+        <h3>-STOTA SUZA / Vinarija Minic-</h3>
+        <p>Dry white wine  <br> 
+          Country of origin: Serbia, Zipsko Vinogorje, Aleksandrovac <br>
+          Varietal composition: 100% Tamjanika
+        </p>
+        <h3>-ŽUTI CVET / Vinarija Tosica-</h3>
+        <p>Dry white wine <br> 
+          Country of origin: Serbia, Nisavsko-Juznomoravski region, Vranje <br>
+          Varietal composition: 100% Tamjanika
+        </p>
+        <h3>-TRI MORAVE BELO / Vinarija Tosica-</h3>
+        <p>Dry white wine  <br> 
+          Country of origin: Serbia, Šumadijski region, Lozovik <br>
+          Varietal composition: Tamjanika, Smederevka, Morava
+        </p>
+        <h3>-MUSCAT KROKAN GROF / Vinarija Fleur D, Oranger-</h3>
+        <p>Dry white wine  <br> 
+          Country of origin: Serbia, Banatski region, Biserno ostrvo
+          Varietal composition: 100% Muskat Krokan
+        </p>
+       </div>
+      <div class="menu-chooser">
+      
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Dessert wine</h3></div>
+        <h3>-BARMET RED-</h3>
+        <p>Sweet special red wine  <br> 
+          Country of origin: Serbia, Fruška Gora
+          Varietal composition: 100% Merlot
+        </p>
+        <h3>-SLATKA SUZA-</h3>
+        <p>Semi-sweet white wine <br>
+        Country of origin: Serbia, Aleksandrovac <br>
+      Varietal composition: 100% Tamjanika</p>
+      
+      </div>
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Premium wine</h3></div>
+        <h3>-Onyx belo / Vinarija Cilic -</h3>
+        <p>Region: Serbia, Tri Morave, Jagodina <br>
+          Varietal composition: Sauvignon Blanc</p>
+        <h3>-Rodoslov Grand Reserve / Vinarija Aleksandrovic-</h3>
+        <p>Region: Serbia, Topola, Oplenac <br>
+          Varietal composition: Cabernet Sauvignon, Merlot Cabernet Franc</p>
+        <h3>-Reserve Radovanovic /  Vinarija Radovanovic-</h3>
+        <p>Region: Serbia, Sumadijski region, Krnjevo <br>
+          Varietal composition: Cabernet Sauvignon</p>
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3 class="lineHeight">Sparkling wines<br/> and champagnes</h3></div>
+          <h3>-PROSSECO VALDO ORIGONE / Vinarija Valdo-</h3>
+          <p>Spumauti <br>
+            Dry sparkling wine <br>
+            Country of origin: Italija, Valdobbiadene <br>
+            Varietal composition: 100% Pinot Blanc</p>
+          <h3>-FRESCO BIANCO KOVACEVIC / Vinarija Kovacevic-</h3>
+          <p>Dry sparkling wine
+            Country of origin: Serbia, Fruska Gora, Irig
+            Varietal composition: Neoplanta, Italijanski rizling, Zupljanka</p>
+          <h3>-TRIJUMF ROSE / Vinarija Alesandrovic-</h3>
+          <p>Dry sparkling wine <br>
+            Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+            Varietal composition: 100% Pino Noir</p>
+          <h3>-MOET & CHANDON-</h3>
+          <p>Superb dry sparkling wine
+            Country of origin: France, Spain
+            Varietal composition: Pinot Meunier</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="menu-container">
+    <div class="menu-list">
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Rose wine</h3></div>
+        <h3>-VARIJANTA / Vinarija Aleksandrovic-</h3>
+        <p>Dry rose wine <br> 
+          Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+          Varietal composition: 100% Muscat
+        </p>
+        <h3>-TRI MORAVE ROSE / Vinarija Temet-</h3>
+        <p>Dry rose wine <br>
+        Country of origin: Serbia, Šumadijski region, Lozovik <br>
+      Varietal composition: Tamjanika, Morava Smederevka</p>
+      <h3>-BARBARA / Vinarija Aleksić-</h3>
+        <p>PoluDry rose wine <br>
+        Country of origin: Serbia, Nišavsko-Južnomoravski region, Vranje <br>
+      Varietal composition: Muscat Hamburg, Cabarnet Sauvignon</p>
+       </div>
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Red wine</h3></div>
+        <h3>-PROKUPAC BOJE LILA / Vinarija Budimir-</h3>
+        <p>Dry red wine <br>
+       Country of origin: Serbia, Zupsko vinogorije, Aleksandrovac <br>
+          Varietal composition: 100% Prokupac</p>
+        <h3>-ZAPIS CRVENI / Vinarija Janko-</h3>
+        <p>Dry red wine <br>
+          Country of origin: Serbia, Sumadijski region, Smederevo br
+          Varietal composition: 100% Merlot</p>
+        <h3>-VLADIKA / Vinarija 13. Jul Plantaze-</h3>
+        <p>Dry red wine <br>
+          Country of origin: Montenegro, Podgoricko vinogorije <br>
+          Varietal composition: Vranac, Cabarnet, Sauvignon, Merlot</p>
+        <h3>-VARIJANTA / Vinarija Aleksandrovic-</h3>
+        <p>Dry rose wine <br>
+          Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+          Varietal composition: 100% Muscat</p>
+          <h3>-AURELIUS / Vinarija Kovacevic-</h3>
+        <p>Dry red wine <br>
+          Country of origin: Serbia, Fruška Gora <br>
+          Varietal composition: Merlot, Cabarnet Sauvignon</p>
+          <h3>-REGENT / Vinarija Aleksandrovic-</h3>
+        <p>Dry red wine <br>
+          Country of origin: Serbia, Sumadijski region, Topola, Oplenac <br>
+          Varietal composition: Merlot, Cabarnet Sauvignon</p>
+      </div>
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Premium wine</h3></div>
+        <h3>-Onyx belo / Vinarija Cilic-</h3>
+        <p>Region: Serbia, Tri Morave, Jagodina <br>
+          Varietal composition: Sauvignon Blanc</p>
+        <h3>-Rodoslov Grand Reserve / Vinarija Aleksandovic-</h3>
+        <p>Region: Serbia, Topola, Oplenac <br>
+          Varietal composition: Cabernet Sauvignon, Merlot Cabernet Franc</p>
+        <h3>-Reserve Radovanovic / Vinarija Radovanovic-</h3>
+        <p>Region: Serbia, Sumadijski region, Krnjevo <br>
+          Varietal composition: Cabernet Sauvignon</p>
+   
+      </div>
+    </div>
+  </div>
+    <div class="menu-image">
+      <img class="imag" src="./images/menu-pic.png" alt="" />
+    </div>
+    <div class="menu-heading">
+      <div class="line-wrap">
+        <img class="line" src="./images/Line 3.svg" alt="">
+        <h3>APPETIZERS</h3>
+        <img class="line" src="./images/Line 3.svg" alt="">
+      </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+      </div>
+    </div>
+    <div class="menu-container">
+      <div class="menu-list">
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Cold appetizers</h3></div>
+          <h3>-A snack "Skadarlija"-</h3>
+          <p>pršuta, kulen od mangulice, <br> cheese, kajmak, čvarci, olives, ajvar, proja
+          </p>
+          <h3>-Serbian plate "Skadarlija" -</h3>
+          <p>pršuta i bacon dried in the wind, <br> urnebes, ajvar, pihtije, <br> čvarci,  
+            prunes <br> stuffed with cheese rolled in bacon, paprika in sour cream</p>
+        <h3>-A range of cheeses-</h3>
+          <p>cheese with thyme, <br> roasted with sesame, čubricom and garlic</p>
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Bread</h3></div>
+          <h3>-Homemade bread-</h3>
+          <p>Homemade bun, proja, salty sticks, <br> with olive oil and garlic</p>
+          <h3>-Scones-</h3>
+        </div>
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Soups and broths</h3></div>
+          <h3>-Veal soup-</h3>
+          <h3>-Chicken soup-</h3>
+          <h3>-Potaž-</h3>
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Salads</h3></div>
+          <h3>-Srpska-</h3>
+          <h3>-Šopska-</h3>
+          <h3>-Cabbage-</h3>
+          <h3>-Green-</h3>
+          <h3>-Tomato-</h3>
+          <h3>-Tomato with cheese-</h3>
+          <h3>-Cucumber-</h3>
+          <h3>-Roasted pepper-</h3>
+          <h3>-Garden for two people-</h3>
+          <h3>-Hot pepper-</h3>
+          <h3>-Greek salad-</h3>
+          <h3>-Vitamin salad-</h3>
+          <h3>-Spring onion-</h3>
+          <h3>-Arugula salad-</h3>
+          <p>arugula, cherries, parmesan, pine nuts, spices</p>
+        </div>
+        <div class="menu-chooser">
+                   <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Hot appetizers</h3></div>
+          <h3>-Grilled halloumi <br> cheese with walnuts-</h3>
+          <p>tomatoes, olives</p>
+          <h3>-Fried cheese-</h3>
+          <h3>-Grilled mushrooms, <br> Rice base-</h3>
+          <h3>-Prebranac-</h3>
+          <h3>-Plums in bacon-</h3>
+          <p>prunes stuffed with cheese rolled in bacon</p>
+          <h3>-Fried pepper <br> stuffed with cheese-</h3>
+          <h3>-Risotto with vegetables-</h3>
+          <p>rice, pepper, eggplant, zucchini, onion</p>
+          <h3>-Risotto with chicken-</h3>
+          <p>rice, chicken, zucchini, spices</p>
+        </div>
+      </div>
+    </div>
+    <div class="menu-image">
+      <img class="imag" src="./images/menu-pic.png" alt="" />
+    </div>
+   
+    <div class="menu-heading">
+      <div class="line-wrap">
+        <img class="line" src="./images/Line 3.svg" alt="">
+        <h3>MAIN MEAL</h3>
+        <img class="line" src="./images/Line 3.svg" alt="">
+      </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+      </div>
+    </div>
+    <div class="menu-container">
+      <div class="menu-list">
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Barbecue</h3></div>
+          <h3>-Old cevap-</h3>
+          <p>five types of meat, hand chopped, <br> with pepper topped with kajmak
+          </p>
+          <h3>-Pljeskavica-</h3>
+        <h3>-Gurmanska pljeskavica-</h3>
+          <p>cheese, bacon, hot pepper, onion</p>
+          <h3>-Ćevapi-</h3>
+          <h3>-Clips-</h3>
+          <p>cheese, bacon, hot pepper 16 pcs, onion</p>
+          <h3>-Smoked meat-</h3>
+          <h3>-Smoked fillet minjon  <br> in cream and porcini mushroom sauce-</h3>
+          <p>pork fillet, cream, boletus, <br> pear in red wine, apricot jam</p>
+          <h3>-Smoked neck-</h3>
+          <h3>-White meat-</h3>
+          <h3>-Sausages "Skadarlija"-</h3>
+          <h3>-Stuffed white meat in bacon-</h3>
+          <p>cheese, pečenica, pickles</p>
+          <h3>-Chicken fillet-</h3>
+          <h3>-Stuffed pileći batak-</h3>
+          <p>cheese, pečenica</p>
+          <h3>-Mixed meat "Skadarlijska noć" for two persons-</h3>
+          <p>ćevapi, sausages, rolled chicken fillet in bacon <br> clips, stuffed white meat, potatoes, onion</p>
+        </div>
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Fish</h3></div>
+          <h3>-Smoked grilled trout-</h3>
+          <p>dalmatian stew</p>
+          <h3>-Squid in white wine-</h3>
+     <p>dalmatian stew</p>
+     <h3>-Grilled salmon-</h3>
+     <p>dalmatian stew</p>
+     
+     
+        </div>
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Dishes to order</h3></div>
+          <h3>-Skadarlijska mućkalica <br> preko leskovca-</h3>
+          <p>pork fillet, tomatoes, pepper, onion, spices</p>
+          <h3>-Crispy chicken with vegetables in<br> oriental sauce-</h3>
+          <h3>-Chicken fillet with pršuta <br> and cheese-</h3>
+          <h3>-A Turkey steak-</h3>
+          <p>gorgonzola, sweet-spicy or njeguski sauce</p>
+          <h3>-Karađorđeva steak-</h3>
+          <p>pork meat, tartar sauce, fries</p>
+          <h3>-Steak in a wok with seven types of vegetables-</h3>
+          <h3>-Grilled steak <br> with grilled vegetables in optional sauce-</h3>
+   
+          <h3>-Rozbratna "Reserve" with <br> potatoes i grilled vegetables 100gr-</h3>
+          <h3>-Pasta Carbonara-</h3>
+          <h3>-Gnocchi with prosciutto-</h3>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="menu-container">
+      <div class="menu-list">
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Ready meals</h3></div>
+          <h3>-Beef stew, bread, cabbage salad-</h3>
+          <p>beef, onion, pepper, white wine, sweet cream</p>
+          <h3>-Soupy pasulj, bread, cabbage salad-</h3>
+          <p>smoked meat, bacon, <br> onion, pepper, sweet pepper</p>
+          <h3>-Meal of day, bread, cabbage salad-</h3>
+       <p>musaka, sarma, chicken fillet, paprikaš, <br> peas with beef, stuffed peppers</p>
+        </div>
+        <div class="menu-chooser">
+          <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>The best from our kitchen</h3></div>
+          <h3>-Mixed meat for four people-</h3>
+          <p>gurmanski ćevap, Smoked white meat, Smoked
+            pork neck,
+             <br> homemade sausage, chicken leg, 
+            chicken fillet, fried potatoesa with cream, grilled vegetables, 
+            baked palenta, urnebes salad,
+             mix salad with cream, red onion</p>
+          <h3>-Smoked ribs-</h3>
+          <p>Smoked pork ribs, honey, red wine, potatoes, onion</p>
+          <h3>-Veal under sach on cream-</h3>
+           <h3>-Lamb under sach-</h3>
+         
+        </div>
+        <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Salad meal</h3></div>
+          <h3>-Cezar salad-</h3>
+          <p>mix salad, chicken, dressing, bacon, parmesan</p>
+          <h3>-Steak salad-</h3>
+        <p>mix salad, steak, dressing, pepper, parmesan</p>
+          <h3>-Salad with smoked salmon-</h3>
+          <p>salmon, mix salad, iceberg, cherries, almond leaves, dressing</p>
+         
+        </div>
+      </div>
+      
+    </div>
+    <div class="menu-heading">
+      <div class="line-wrap">
+        <img class="line" src="./images/Line 3.svg" alt="">
+        <h3>DESSERT</h3>
+        <img class="line" src="./images/Line 3.svg" alt="">
+      </div>
+      <p class="under-text">IN THE HEART OF THE OLD TOWN</p>
+    </div>
+    <div class="menu-list1">
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Cakes</h3></div>
+        <h3>-Choco orange-</h3>  
+        <h3>-Krempita-</h3>
+        <h3>-Ice cube-</h3>
+         <h3>-Tres leches-</h3>
+        
+      </div>
+      <div class="menu-chooser">
+        <div class="svg"><img class="card"src="./images/Subtract.svg" alt=""><h3>Pancakes</h3></div>
+        <h3>-Pancakes-</h3>
+        <h3>-Skadarlija pancakes-</h3>
+       <p>ice cream, wild berries, sweet cream, toppings</p>
+      </div>
+    </div>
+    
+    <section class="reservations">
+      <div class="section-container reservations-wrap">
+        <h2>Visit Us</h2>
+        <p>
+          Restaurant Skadarlijska noč is a place where gastronomy lovers are happy to return. For your reservation, you can contact us by phone, through the online form or by coming to the restaurant in person.
+        </p>
+          <button class="reservations-button" onclick="openModal()">Reservation</button></a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+    <a href="#">  <h3>Skadarlijska Noć</h3></a>
+      <div class="footer-flex">
+        <div class="footer-info">
+          <p>Adress</p>
+          <address>Skadarlijska 40c , Beograd 11000, Srbija</address>
+        </div>
+        <div class="footer-info">
+          <p>Email</p>
+          <address>skadarlijskanoc@email.com</address>
+        </div>
+        <div class="footer-info">
+          <p>Phone</p>
+          <address>+381 61 5662966</address>
+        </div>
+        <div class="footer-info">
+          <a href="https://www.facebook.com/Skadarlijska-no%C4%87-102850532460584" target="_blank" rel="noopener noreferrer">
+            <img src="./images/facebook-logo.svg" alt="" class="sm-icon" />
+          </a>
+          <a href="https://www.instagram.com/skadarlijskanoc.beograd/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/instagram-logo.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <small>Copyright Skadarlijska Noć 2022</small>
+        <small>
+          <a
+            href="https://kingdomdoo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Designed By Kingdom</a
+          >
+        </small>
+      </div>
+    </div>
+  </footer>
+  <!--modal section-->
+  <section>
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="modal-info">
+          <h1 class="modal-h1">Request a reservation</h1>
+          <p class="modal-p">
+            Send us an inquiry to book a table and we will answer you as soon as possible.
+          </p>
+        </div>
+        <form>
+          <div class="modal-input-first">
+            <div class="first-modal-holder">
+              <label>Name and Lastname</label>
+              <input
+                class="input-name"
+                type="text"
+                name="Ime"
+                placeholder="Name and Lastname"
+              />
+            </div>
+            <div>
+              <label>E-mail</label>
+              <input
+                class="input-mail"
+                type="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </div>
+          </div>
+          <div class="modal-input-second">
+            <div>
+              <label>Phone</label>
+              <input
+                class="input-phone"
+                type="tel"
+                placeholder="Phone"
+                required
+              />
+            </div>
+            <div>
+              <label>Time</label>
+              <div class="custom-select">
+                <select class="input-time" id="time" size="1">
+                  <option value="" disabled selected hidden></option>
+                  <option value="1">08:00</option>
+                  <option value="2">09:00</option>
+                  <option value="3">10:00</option>
+                  <option value="4">11:00</option>
+                  <option value="5">12:00</option>
+                  <option value="6">13:00</option>
+                  <option value="7">14:00</option>
+                  <option value="8">15:00</option>
+                  <option value="9">16:00</option>
+                  <option value="10">17:00</option>
+                  <option value="11">18:00</option>
+                  <option value="12">19:00</option>
+                  <option value="13">20:00</option>
+                  <option value="14">21:00</option>
+                  <option value="15">22:00</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="custom-select">
+              <label>Number of person</label>
+              <select class="input-person" id="number">
+                <option value="" disabled selected hidden></option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+              </select>
+              <i class="fa-solid fa-chevron-down second-arrow"></i>
+            </div>
+            <div class="custom-select">
+              <label>Date</label>
+              <input class="input-date" type="date" />
+            </div>
+          </div>
+          <div class="modal-input-submit submit-class">
+            <input class="input-send" value="Send" type="submit" />
+            <button
+              id="close"
+              class="input-exit"
+              name="close"
+              onclick="closeModal()"
+            >
+              Exit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <script src="./menu.js"></script>
+    <script src="./Reservation.js"></script>
+
+  </body>
+</html>
